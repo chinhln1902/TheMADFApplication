@@ -1,0 +1,742 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="foodbank.themadf.themadf.NewClientFragment">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="16dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+            tools:context=".MainActivity">
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/form"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="New Client Form"
+                android:layout_marginBottom="@dimen/space"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="#0c1bef" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/subform"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/font_height"
+                        android:layout_height="@dimen/font_height"
+                        android:layout_marginRight="10sp"
+                        android:background="@drawable/contact"/>
+                <TextView
+                android:id="@+id/nFirstN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name:"
+                    android:layout_marginRight="20sp"
+                    android:textSize="@dimen/font3"
+                android:textColor="@color/textColor"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <TextView
+                android:id="@+id/edtNewClientFirstName"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:layout_width="@dimen/input_width"
+                android:layout_height="@dimen/input_height"
+                android:textSize="@dimen/font3"
+                android:padding="10dp"
+                android:background="@drawable/textbox"
+                android:inputType="textPersonName"
+                android:textColorHint="#09090a"
+                android:textColor="#f21906">
+            </TextView>
+                </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/font_height"
+                        android:layout_height="@dimen/font_height"
+                        android:layout_marginRight="10sp"
+                        android:background="@drawable/contact"/>
+            <TextView
+                android:id="@+id/nLastN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name:"
+                android:layout_marginRight="20sp"
+                android:textSize="@dimen/font3"
+                android:textColor="@color/textColor"
+                />
+
+            <TextView
+                android:id="@+id/edtNewClientLastName"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:layout_width="@dimen/input_width"
+                android:layout_height="@dimen/input_height"
+                android:textSize="@dimen/font3"
+                android:padding="10dp"
+                android:background="@drawable/textbox"
+                android:inputType="textPersonName"
+                android:textColor="#f21906"
+                android:textColorHint="#09090a"></TextView>
+                </LinearLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/font_height"
+                        android:layout_height="@dimen/font_height"
+                        android:layout_marginRight="10sp"
+                        android:background="@drawable/calendar"/>
+
+                    <TextView
+                        android:id="@+id/nDOB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20sp"
+                        android:inputType="date"
+                        android:digits="0123456789/"
+                        android:text="@string/dob"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/font3" />
+
+
+                <TextView
+                    android:id="@+id/edtNewDOB"
+                    android:layout_width="@dimen/input_width"
+                    android:layout_height="@dimen/input_height"
+                    android:textSize="@dimen/font3"
+                    android:background="@drawable/textbox"
+                    android:padding="10dp"
+                    android:textColor="#f21906"
+                    android:textColorHint="#5e5e60" />
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/subform"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/font_height"
+                        android:layout_height="@dimen/font_height"
+                        android:layout_marginRight="10sp"
+                        android:background="@drawable/place"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font3"
+                        android:text="Address"
+                        android:textColor="@color/textColor"
+                        />
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/nStreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Street"
+                android:textSize="@dimen/font"
+                android:textColor="@color/textColor"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/edtNewClientStreetAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/textbox"
+                android:padding="10dp"
+                android:inputType="text"
+                android:textColor="#f21906"
+                android:textSize="@dimen/font3"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/nZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Zip Code"
+                android:textSize="@dimen/font"
+                android:textColor="@color/textColor"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/edtNewClientZipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/textbox"
+                android:padding="10dp"
+                android:inputType="textPostalAddress"
+                android:textSize="@dimen/font3"
+                android:textColor="#f21906"
+                android:textStyle="italic"></TextView>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/subform"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/nHouseHold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HouseHold"
+                android:textSize="@dimen/font3"
+                android:textColor="@color/textColor"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="DOB"
+                    android:textSize="@dimen/font"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/textColor"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Race"
+                    android:textSize="@dimen/font"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/textColor"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/edtMember1DOB"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/textbox"
+                    android:textSize="18dp"
+                    android:inputType="date"
+                    android:textColor="#f21906"
+                    android:textColorHint="#5e5e60" />
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spRace1"
+                    android:layout_marginLeft="30sp"
+                    android:gravity="right"
+                    android:background="@drawable/textbox"
+                    android:entries="@array/race_arrays"></Spinner>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtMember2DOB"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:padding="10dp"
+                    android:inputType="date"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/textbox"
+                    android:textSize="18dp"
+                    android:textColor="#f21906"
+                    android:textColorHint="#5e5e60" />
+                <ImageButton
+                    android:layout_width="@dimen/font_height"
+                    android:layout_height="@dimen/font_height"
+                    android:id="@+id/imageMem2Button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/calendar"/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spRace2"
+                    android:layout_marginLeft="10dp"
+                    android:prompt="@string/race_prompt"
+                    android:gravity="right"
+                    android:background="@drawable/textbox"
+                    android:entries="@array/race_arrays"></Spinner>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtMember3DOB"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:inputType="date"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/textbox"
+                    android:textSize="18dp"
+                    android:textColor="#f21906"
+                    android:textColorHint="#5e5e60" />
+                <ImageButton
+                    android:layout_width="@dimen/font_height"
+                    android:layout_height="@dimen/font_height"
+                    android:id="@+id/imageMem3Button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/calendar"/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spRace3"
+                    android:layout_marginLeft="10dp"
+                    android:prompt="@string/race_prompt"
+                    android:gravity="right"
+                    android:background="@drawable/textbox"
+                    android:entries="@array/race_arrays"></Spinner>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtMember4DOB"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/textbox"
+                    android:textSize="18dp"
+                    android:textColor="#f21906"
+                    android:textColorHint="#5e5e60" />
+                <ImageButton
+                    android:layout_width="@dimen/font_height"
+                    android:layout_height="@dimen/font_height"
+                    android:id="@+id/imageMem4Button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/calendar"/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spRace4"
+                    android:layout_marginLeft="10dp"
+                    android:prompt="@string/race_prompt"
+                    android:gravity="right"
+                    android:background="@drawable/textbox"
+                    android:entries="@array/race_arrays"></Spinner>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtMember5DOB"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:inputType="date"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/textbox"
+                    android:textSize="18dp"
+                    android:textColor="#f21906"
+                    android:textColorHint="#5e5e60" />
+                <ImageButton
+                    android:layout_width="@dimen/font_height"
+                    android:layout_height="@dimen/font_height"
+                    android:id="@+id/imageMem5Button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/calendar"/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spRace5"
+                    android:layout_marginLeft="10dp"
+                    android:prompt="@string/race_prompt"
+                    android:gravity="right"
+                    android:background="@drawable/textbox"
+                    android:entries="@array/race_arrays"></Spinner>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtMember6DOB"
+                    android:inputType="date"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/textbox"
+                    android:textSize="18dp"
+                    android:textColor="#f21906"
+                    android:textColorHint="#5e5e60" />
+                <ImageButton
+                    android:layout_width="@dimen/font_height"
+                    android:layout_height="@dimen/font_height"
+                    android:id="@+id/imageMem6Button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/calendar"/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spRace6"
+                    android:layout_marginLeft="10dp"
+                    android:prompt="@string/race_prompt"
+                    android:gravity="right"
+                    android:background="@drawable/textbox"
+                    android:entries="@array/race_arrays"></Spinner>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtMember7DOB"
+                    android:layout_width="@dimen/width"
+                    android:inputType="date"
+                    android:layout_height="@dimen/height"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/textbox"
+                    android:textSize="18dp"
+                    android:textColor="#f21906"
+                    android:textColorHint="#5e5e60" />
+                <ImageButton
+                    android:layout_width="@dimen/font_height"
+                    android:layout_height="@dimen/font_height"
+                    android:id="@+id/imageMem7Button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/calendar"/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spRace7"
+                    android:layout_marginLeft="10dp"
+                    android:prompt="@string/race_prompt"
+                    android:gravity="right"
+                    android:background="@drawable/textbox"
+                    android:entries="@array/race_arrays"></Spinner>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtMember8DOB"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    android:background="@drawable/textbox"
+                    android:textSize="18dp"
+                    android:textColor="#f21906"
+                    android:textColorHint="#5e5e60" />
+                <ImageButton
+                    android:layout_width="@dimen/font_height"
+                    android:layout_height="@dimen/font_height"
+                    android:id="@+id/imageMem8Button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/calendar"/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spRace8"
+                    android:layout_marginLeft="10dp"
+                    android:prompt="@string/race_prompt"
+                    android:gravity="right"
+                    android:background="@drawable/textbox"
+                    android:entries="@array/race_arrays"></Spinner>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtMember9DOB"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    android:background="@drawable/textbox"
+                    android:textSize="18dp"
+                    android:textColor="#f21906"
+                    android:textColorHint="#5e5e60" />
+                <ImageButton
+                    android:layout_width="@dimen/font_height"
+                    android:layout_height="@dimen/font_height"
+                    android:id="@+id/imageMem9Button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/calendar"/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spRace9"
+                    android:layout_marginLeft="10dp"
+                    android:prompt="@string/race_prompt"
+                    android:gravity="right"
+                    android:background="@drawable/textbox"
+                    android:entries="@array/race_arrays"></Spinner>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtMember10DOB"
+                    android:inputType="date"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/textbox"
+                    android:textSize="18dp"
+                    android:textColor="#f21906"
+                    android:textColorHint="#5e5e60" />
+                <ImageButton
+                    android:layout_width="@dimen/font_height"
+                    android:layout_height="@dimen/font_height"
+                    android:id="@+id/imageMem10Button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/calendar"/>
+
+                <Spinner android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spRace10"
+                    android:layout_marginLeft="10dp"
+                    android:prompt="@string/race_prompt"
+                    android:gravity="right"
+                    android:background="@drawable/textbox"
+                    android:entries="@array/race_arrays"></Spinner>
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/subform"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/nSig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Signature:"
+                android:textSize="@dimen/font3"
+                android:layout_marginRight="15sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="@color/textColor" />
+
+            <CheckBox
+                android:id="@+id/edtNewCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/font_height"
+                android:buttonTint="@android:color/holo_green_dark"
+                android:text="I Agree"
+                android:textSize="@dimen/font"
+                android:textColor="@color/textColor"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            </LinearLayout>
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/nMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="#f40909"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <Button
+                android:id="@+id/buttonClientNew"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="@string/submit"
+                android:layout_gravity="center"
+                android:background="@drawable/button_food"
+                android:textColor="@color/colorPrimary"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                ></Button>
+
+        </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">TheMADF</string>
+    <string name="title_home">Home</string>
+    <string name="submit">SUBMIT</string>
+    <string name="login">LOGIN</string>
+    <string name="option">Login Option</string>
+    <string name="option1">Food Weight Login</string>
+    <string name="option2">Volunteer Login</string>
+    <string name="schedule">Hours of Operation</string>
+    <string name="client">Client Check In</string>
+    <string name="foodweight">Food Weight</string>
+    <string name="volunteer">Volunteer</string>
+    <string name="about">About</string>
+    <string name="user">Username:</string>
+    <string name="pass">Password:</string>
+    <string name="pets">Do you share your home with anybody? If so, Please indicate how many below: \n¿Cuántos viven contigo? \nСкільки живе з вами</string>
+    <string name="gender">Gender/Sexo/гендер?</string>
+    <string name="vetstat">Veteran/Veterano/Ветеран</string>
+    <string name="male">Male/Hombre/Людина</string>
+    <string name="female">Female/Mujer/Жінка</string>
+    <string name="other">Undisclosed/Otro/Інший</string>
+    <string name="Yes">Yes/Sí/Так</string>
+
+    <string name="email">E-mail/Електронна пошта?</string>
+    <string name="phone">Phone/Telefono/телефон</string>
+    <string name="city">City/Ciudad/Місто</string>
+
+    <string name="grats">Thank You For Your Service!</string>
+
+    <string name ="Test">test</string>
+    <string name="privacy">Privacy Policy</string>
+
+    <string name="hour">  Sunday \nMonday \nTuesday \nWednesday \nThursday \n \nFriday \nSaturday
+    </string>
+    <string name="time">  2:00PM - 4:00PM \n4:00PM - 7:00PM \n11:30AM - 4:30PM \nCLOSED \n9:00AM - 5:00 PM \n(Bag Service Only) \n11:30AM - 4:30PM \n10:30AM - 3:30PM </string>
+    <string name="star">
+    <![CDATA[<b><font color=#ff0000>*</b>
+    ]]>
+
+  </string>
+    <string name="warning">
+    <![CDATA[<i><font color=#ff0000> Thank You!
+</i>]]></string>
+    <string name="warning1">
+    <![CDATA[<i><font color=#ff0000>Please complete the New Client Registration Form before taking your ticket and proceeding to the counter to be served
+</i>]]></string>
+
+    <string name="warning2">
+    <![CDATA[<i><font color=#ff0000> Please take your ticket and proceed to the counter to be served
+</i>]]></string>
+    <string-array name="race_arrays">
+        <item>Please Choose Race</item>
+        <item>Undisclosed</item>
+        <item>White</item>
+        <item>Black/African American</item>
+        <item>Asian</item>
+        <item>American Indian/Alaska Native</item>
+        <item>American Indian/Alaska Native and White</item>
+        <item>Native Hawaiian/Other Pacific Islander</item>
+        <item>Asian and White</item>
+        <item>American Indian/Alaskan Native and Black/African American</item>
+        <item>Black/African American</item>
+        <item>Other Multi-Racial</item>
+    </string-array>
+    <string name="race_prompt">Choose Race</string>
+
+
+    <string name="eloise">Eloise\'s Cooking Pot</string>
+    <string name="address">3543 E Mckinley Avenue \n     Tacoma, Wa 98404</string>
+    <string name="title">The Making A Difference Foundation</string>how many at home
+    <string name="contact">Phone: (253).426.1994 \ninfo@themadfseattle.org</string>
+    <string name="web">www.themadf.org</string>
+    <string name="mission">Our mission is to make a difference in the lives of others, one person at a time, by
+        helping them acquire the most basic needs: food, housing, encouragement, and opportunity.
+    </string>
+    <string name="ack">I Agree/Estoy de Acuerdo/Я згоден</string>
+    <string name="signature">Terms and Conditions/Términos y Condiciones/Правила та умови</string>
+    <string name="no">No/Немає</string>
+    <string name="checkin">Check In Form</string>
+    <string name="lastname">Surname/Apellido/Прізвище</string>
+    <string name="famsize">Family/ Familia/Сім\'я</string>
+    <string name="babies">Babies/bebé/немовля</string>
+    <string name="street">Street/Calle/Вулиця</string>
+    <string name="zipcode">Zip/Código postal/ЗІП код</string>
+    <string name="newclient">Is today your first time checking in with us?</string>
+    <string name="yes">Yes/Si/так</string>
+    <string name="address2">Home Address/Dirección de Casa/Домашня адреса</string>
+    <string name="cats">Cats/Gatos/Кот      </string>
+    <string name="dogs">Dogs/Perros/Пес     </string>
+    <string name="dob">Birthday/Cumpleaños/дата народження</string>
+    <string name="first">First Name/Hombre/Ім\'я</string>
+    <string name="homeless">Homeless/Sin Hogar/Бездомний</string>
+    <string name="state">State/Estado/Держава</string>
+
+    <string name="altFName">TODO</string>
+    <string name="altLName">TODO</string>
+    <string name="altDOB">TODO</string>
+
+    <string name="todo">TODO</string>
+
+
+
+
+
+
+</resources>
